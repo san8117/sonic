@@ -1,19 +1,31 @@
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Header from "./components/Header";
-import Sobre from "./components/Sobre";
-import Introducao from "./components/Introducao";
-import Elenco from "./components/Elenco";
+import Sobre from "./pages/Sobre";
+import Introducao from "./pages/Introducao";
+import Elenco from "./pages/Elenco";
+
+const router = createBrowserRouter([
+  {
+  path: "/",
+  element: <Introducao />
+  },
+
+  {
+    path: "/elenco",
+    element: <Elenco />
+  },
+
+  {
+    path: "/sobre",
+    element: <Sobre />
+  },
+
+
+])
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Introducao/>
-      <Sobre/>
-      <Elenco/>
-      
-    </div>
+   <RouterProvider router={router} />
   )
 }
 

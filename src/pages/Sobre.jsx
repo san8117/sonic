@@ -1,9 +1,11 @@
 import Sonic1 from "../assets/Sonic1.jpg"
 import Sonic5 from "../assets/Sonic5new.jpg"
+import Header from "../components/Header";
 
 function Sobre() {
   return (
     <div className="flex items-center flex-col  my-16">
+       <Header/>
         <div>
             <h2 className="font-bold text-4xl mb-7 text-blue-700">SOBRE</h2>
         </div>

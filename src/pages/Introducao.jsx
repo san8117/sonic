@@ -1,9 +1,11 @@
 import Capa from "../assets/Sonic2.jpg"
+import Header from "../components/Header";
 
 function Introducao() {
     return (
       <div className=" flex flex-col items-center my-12">
-          <img src={Capa} alt="Capa do filme Sonic" className="w-80" />
+         <Header/>
+          <img src={Capa} alt="Capa do filme Sonic" className="w-80 mt-14" />
           
 
           <div className=" ml-2 mr-2 my-7 font-semibold ">

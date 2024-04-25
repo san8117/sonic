@@ -6,10 +6,12 @@ import VilaoSonic from "../assets/Vilao.jpg"
 import Ator2 from "../assets/Eggman2.jpg"
 import Dublagem from "../assets/Dublador.jpg"
 import Sonic from "../assets/Sonic6new.jpg"
+import Header from "../components/Header";
 
 function Elenco() {
     return (
       <div className="flex flex-col intem-center">
+         <Header/>
 
          <div className="flex justify-center mt-6 font-bold text-4xl text-blue-600 items-center mb-8">
 
